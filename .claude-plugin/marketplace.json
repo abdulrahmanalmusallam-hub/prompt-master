@@ -1,0 +1,11 @@
+{
+  "name": "prompt-master",
+  "owner": { "name": "Abdurrhman" },
+  "plugins": [
+    {
+      "name": "prompt-master",
+      "source": "./",
+      "description": "Promote master: one click rewrites the rough prompt in your prompt box into a clearer one before you send it."
+    }
+  ]
+}

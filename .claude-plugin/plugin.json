@@ -1,0 +1,21 @@
+{
+  "name": "prompt-master",
+  "version": "0.1.0",
+  "description": "Promote master: one click rewrites the rough prompt in your prompt box into a clearer one before you send it.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "model": {
+      "type": "string",
+      "title": "Rewrite model",
+      "description": "Model that rewrites the prompt when the chat is not used as context (or there is no chat yet).",
+      "default": "sonnet",
+      "options": ["sonnet", "opus", "haiku"]
+    },
+    "useConversation": {
+      "type": "boolean",
+      "title": "Use this chat as context",
+      "description": "Let the rewrite read the current conversation so vague words like 'it' or 'that file' become specific. Uses the session's own model.",
+      "default": true
+    }
+  }
+}
